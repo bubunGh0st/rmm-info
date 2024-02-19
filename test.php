@@ -1,7 +1,7 @@
 <?php
-$access_token = 'dop_v1_6c47eeb3ac49d7785a011da7032816ea781e4f48d84d3cf065bf01bdfef27d13'; // Replace with the actual access token
+$access_token = 'Your Token'; // Replace with the actual access token
 
-$api_url = 'https://syrah-api.centrastage.net/api/v2/site/39362110-3e83-409a-a814-996246bee439/devices/';
+$api_url = 'API URL';
 
 $ch = curl_init($api_url);
 
