@@ -1,11 +1,11 @@
 <?php
 // Database connection details
-$servername = 'localhost:3306';
-$username = 'dev_rmm';
-$password = 'zbBm5#227';
-$dbname = 'projects_rmm';
+$servername = '#ServerName';
+$username = '#UserName';
+$password = '#PassWord';
+$dbname = '#DBName';
 
-echo "Hello";
+//echo "Hello";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -18,8 +18,8 @@ else{
 }
 
 // Replace with your RMM API endpoint and credentials
-$rmmApiUrl = 'https://syrah-api.centrastage.net/api/v2/site/39362110-3e83-409a-a814-996246bee439/alerts/open';
-$rmmApiKey = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiYWVtLWFwaSJdLCJ1c2VyX25hbWUiOiJtYWhlc2hAZmx5b25pdC5jb20uYXUiLCJzY29wZSI6WyJkZWZhdWx0Il0sImNsaWVudEF1dGhvcml0aWVzIjpbXSwiYWNjb3VudF91aWQiOiJzeXI4MWI3MDAwMSIsImV4cCI6MTY5NDQyMjU4MSwiaWF0IjoxNjk0MDYyNTgxLCJqdGkiOiIwV3FmTFpnTnNqVUxzb181bkRwSlRpZFhNRjgiLCJjbGllbnRfaWQiOiJwdWJsaWMtY2xpZW50In0.0cKSkJ_HcMkWkM7KkEDPgOT9DbP7Gjm0gvD1tMMsXL-mTR0oN_pL9FbWcjbEUfh0hon22x8dU_Cy3dqccmja8Sm9fSNT0psib0O8OAlcjtY2aw0rRY-plYDflgyRQzzo9iD19BimQabvl9fBUZZFOkLYaI7vCa6bX15MQkmNV7GQbgYMqqAybhRQMsCZLJQ98RoB1Co9IFuf62a3YWah3cSZjrwHKsgnehu8zmT0ApSMTReWtWnLPoE1EYttp9oRHc7oyIm7ypSP7RKQHKsqaNu0QOlu7_ur2lHurAwN9oYYhD1U9LHU4jXDnAdiWmSJzIAvc5jte8I7vGQX1KQ4qw';
+$rmmApiUrl = 'API URL';
+$rmmApiKey = 'API Key';
 
 // Retrieve data from RMM API
 $data = json_decode(file_get_contents($rmmApiUrl, false, stream_context_create([
